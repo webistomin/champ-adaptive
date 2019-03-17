@@ -6,11 +6,17 @@
   +media(768px)
     padding: 60px 0 100px 0
 
+  +media(1280px)
+    padding-bottom: 40px
+
 
   +m('blue')
     background-image: linear-gradient(23deg, #25a8e0 0%, #8ce8fd 100%)
     +media(768px)
       padding: 100px 0 60px 0
+
+    +media(1280px)
+      padding-bottom: 60px
 
   +e('box')
     display: flex
@@ -27,6 +33,9 @@
         flex-direction: row-reverse
         align-items: center
 
+    +media(1280px)
+      align-items: flex-start
+
   +e('col')
     text-align: center
 
@@ -39,6 +48,11 @@
 
   +e('pic')
     text-align: center
+
+    +m('left')
+      +media(1280px)
+        left: -60px
+
     +m('top')
       margin-bottom: 9px
       img
@@ -69,9 +83,14 @@
           width: 100%
           padding-left: 0
 
+        +media(1280px)
+          padding-left: 60px
+
       +media(768px)
         left: auto
         z-index: -1
+
+
 
   +e('title')
     margin: 0
@@ -110,12 +129,18 @@
       line-height: 26px
       letter-spacing: 0.02px
 
+    +media(1280px)
+      margin-bottom: 24px
+
   +e('btn')
     text-transform: uppercase
     margin-top: 22px
     margin-left: auto
     margin-right: auto
     font-weight: 400
+
+    +media(1280px)
+      margin-top: 32px
 
   +e('steps')
     margin-bottom: 20px

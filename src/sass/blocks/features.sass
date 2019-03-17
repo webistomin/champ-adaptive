@@ -6,6 +6,9 @@
   +media(768px)
     padding-bottom: 100px
 
+  +media(1280px)
+    padding-bottom: 140px
+
   +e('img')
     +m('logo')
       width: 74%
@@ -36,6 +39,9 @@
 
       & br
         display: block
+
+    +media(1280px)
+      margin: 30px 0
 
   +e('list')
     display: flex
@@ -168,9 +174,13 @@
           animation: moveDown 5s infinite alternate
 
       +m('eleventh')
-        left: 10%
-        top: 25%
+        display: none
 
-        img
-          animation: moveUp 5s infinite alternate
+        +media(1280px)
+          display: block
+          left: 10%
+          top: 25%
+
+          img
+            animation: moveUp 5s infinite alternate
 

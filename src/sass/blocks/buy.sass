@@ -12,6 +12,10 @@
     padding-bottom: 90px
     padding-top: 90px
 
+    +media(1024px)
+      padding-bottom: 190px
+      padding-top: 190px
+
   +e('container')
     display: flex
     flex-direction: column
@@ -29,6 +33,7 @@
     font-style: italic
     color: #161615
     transform: rotate(-5deg) skew(0, 5deg)
+    margin-top: 0
 
     br.desktop
       display: none
@@ -96,6 +101,9 @@
       img
         animation: moveDown 4s infinite alternate
 
+      +media(1280px)
+        top: 20%
+
     +m('fourth')
       left: -2%
       top: 30%
@@ -112,6 +120,10 @@
       img
         animation: moveDown 2s infinite alternate
 
+      +media(1280px)
+        top: 50%
+        left: 75%
+
     +m('sixth')
       left: 14%
       bottom: 5%
@@ -119,11 +131,12 @@
       width: 66px
       z-index: 2
 
+      +media(768px)
+        left: 40%
+        bottom: 0
+
       img
         animation: moveDown 4s infinite alternate
-
-      +m(768px)
-        left: 30%
 
     +m('seventh')
       left: 69.3%
@@ -140,7 +153,7 @@
 
       +media(1024px)
         display: block
-        top: 70%
+        top: 60%
         left: 0
         z-index: 1
 
@@ -157,6 +170,11 @@
 
         img
           animation: moveDown 3s infinite alternate
+
+      +media(1280px)
+        width: 239px
+        left: 85%
+        top: 30%
 
     +m('tenth')
       display: none
