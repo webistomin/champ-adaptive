@@ -3,6 +3,9 @@
     figure.page-header__pic
       img(src='img/champ-logo.svg' width='132' height='50')
   +e.container
+    +e.arrows
+      +e.BUTTON.arrow._left
+      +e.BUTTON.arrow._right
     +e.slider
       +e.slide._yellow.parallax-container
         +e.inner._first.parallax-wrapper(id='first-slide-scene')
@@ -124,7 +127,7 @@
           +e.H2.title._small._dark Это быть активным весь день!
           +e.P.text._dark Батончик протеиновый CHAMP! &laquo;Ореховый&raquo;
             +e.BR
-              | Рекомендуется употреблять&nbsp;до, после или между занятиями фитнесом
+            | Рекомендуется употреблять&nbsp;до, после или между занятиями фитнесом
           +e.UL.contains
             +e.LI.contain
               +e.SPAN PROTEIN 17%
@@ -152,7 +155,7 @@
           +e.H2.title._small._dark Это быть активным весь день!
           +e.P.text._dark Ванильный протеиновый коктейль CHAMP!
             +e.BR
-              | вкусный и&nbsp;необычный перекус, который наполняет энергией
+            | вкусный и&nbsp;необычный перекус, который наполняет энергией
           +e.UL.contains
             +e.LI.contain
               +e.SPAN PROTEIN 25%
@@ -169,6 +172,8 @@
           +e(data-depth="0.30").decor._first.parallax-layer
           +e(data-depth="0.35").decor._second.parallax-layer
           +e(data-depth="0.40").decor._third.parallax-layer
+          +e(data-depth="0.40").decor._fourth.parallax-layer
+          +e(data-depth="0.35").decor._fifth.parallax-layer
           +e(data-depth="0.35").FIGURE.pic._absolute._big.parallax-layer
             +e.PICTURE
               +e.SOURCE(media="(min-width: 768px)" srcset="img/vanilla-slide/desktop/shaker.png")

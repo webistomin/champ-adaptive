@@ -2,7 +2,7 @@
   //margin-top: -40px
   overflow: hidden
   position: relative
-  z-index: 1
+  //z-index: 1
 
   &::after
     content: ""
@@ -30,7 +30,7 @@
     margin: 0 -1%
     height: 80px
     position: absolute
-    z-index: 2
+    z-index: 0
     top: 0
     left: 0
     background-position: bottom
@@ -135,6 +135,9 @@
             left: 15%
             background-image: url("../img/banana-slide/desktop/banana-1.png")
 
+          +media(1024px)
+            left: 30%
+
         +m('second')
           width: 74px
           height: 74px
@@ -168,6 +171,9 @@
             top: 30%
             background-image: url("../img/banana-slide/desktop/banana-3.png")
 
+          +media(1024px)
+            left: 8%
+
         +m('fourth')
           width: 80px
           height: 85px
@@ -182,6 +188,9 @@
             top: 20%
             height: 182px
             background-image: url("../img/banana-slide/desktop/banana-2.png")
+
+          +media(1024px)
+            left: 75%
 
     +m('second')
       .intro__decor
@@ -198,6 +207,10 @@
             height: 188px
             background-image: url("../img/caramel-slide/desktop/Image_30.png")
 
+          +media(1024px)
+            top: 15%
+            left: 10%
+
         +m('second')
           width: 36px
           height: 28px
@@ -210,6 +223,9 @@
             width: 75px
             height: 56px
             background-image: url("../img/caramel-slide/desktop/Image_29.png")
+
+          +media(1024px)
+            top: 14%
 
         +m('third')
           width: 27px
@@ -237,6 +253,10 @@
             height: 78px
             background-image: url("../img/caramel-slide/desktop/Image_27.png")
 
+          +media(1024px)
+            left: 10%
+            top: 50%
+
         +m('fifth')
           width: 79px
           height: 55px
@@ -251,6 +271,10 @@
             top: 30%
             left: 85%
             background-image: url("../img/caramel-slide/desktop/Image_28.png")
+
+          +media(1024px)
+            left: 75%
+            top: 30%
 
     +m('third')
       .intro__decor
@@ -311,6 +335,13 @@
             top: 25%
             background-image: url("../img/cherry-slide/desktop/cherry-2.png")
 
+          +media(1024px)
+            left: -7%
+            top: 33%
+
+          +media(1300px)
+            left: 10%
+
         +m('fifth')
           width: 40px
           height: 23px
@@ -360,6 +391,10 @@
             height: 162px
             background-image: url("../img/strawberry-slide/desktop/strawberry-3.png")
 
+          +media(1024px)
+            top: 13%
+            left: 61%
+
         +m('third')
           width: 70px
           height: 86px
@@ -375,6 +410,10 @@
             left: -5%
             background-image: url("../img/strawberry-slide/desktop/strawberry-4.png")
 
+          +media(1300px)
+            left: 14%
+            top: 35%
+
         +m('fourth')
           width: 90px
           height: 72px
@@ -388,6 +427,9 @@
             height: 139px
             left: 80%
             background-image: url("../img/strawberry-slide/desktop/strawberry-2.png")
+
+          +media(1024px)
+            top: 38%
 
     +m('fifth')
       .intro__decor
@@ -404,6 +446,10 @@
             height: 85px
             background-image: url("../img/nut-slide/desktop/nut-10.png")
 
+          +media(1024px)
+            top: 27%
+            left: 18%
+
         +m('second')
           top: 10%
           left: 27%
@@ -416,6 +462,10 @@
             width: 93px
             height: 88px
             background-image: url("../img/nut-slide/desktop/nut-2.png")
+
+          +media(1024px)
+            top: 26%
+            left: 38%
 
         +m('third')
           top: 20%
@@ -457,6 +507,9 @@
             height: 99px
             background-image: url("../img/nut-slide/desktop/nut-9.png")
 
+          +media(1024px)
+            left: 11%
+
         +m('sixth')
           top: 45%
           left: 50%
@@ -494,11 +547,16 @@
           left: -2%
           top: 20%
           background-image: url("../img/vanilla-slide/vanilla-2.png")
+          z-index: 2
 
           +media(768px)
             width: 258px
             height: 255px
             background-image: url("../img/vanilla-slide/desktop/vanilla-2.png")
+
+          +media(1024px)
+            left: 13%
+            top: 37%
 
         +m('second')
           width: 98px
@@ -512,6 +570,10 @@
             width: 206px
             height: 214px
             background-image: url("../img/vanilla-slide/desktop/vanilla-3.png")
+
+          +media(1024px)
+            left: 63%
+            top: 19%
 
         +m('third')
           width: 144px
@@ -540,6 +602,10 @@
             height: 106px
             background-image: url("../img/chocolate-slide/desktop/choco-1.png")
 
+          +media(1024px)
+            top: 26%
+            left: 26.5%
+
         +m('second')
           top: 35%
           right: 0
@@ -551,6 +617,10 @@
             width: 97px
             height: 82px
             background-image: url("../img/chocolate-slide/desktop/choco-4.png")
+
+          +media(1024px)
+            top: 28%
+            right: 22%
 
         +m('third')
           top: 55%
@@ -565,13 +635,17 @@
             height: 58px
             background-image: url("../img/chocolate-slide/desktop/choco-5.png")
 
+          +media(1024px)
+            top: 49%
+            left: 10.75%
+
         +m('fourth')
           display: none
 
-          +media(768px)
+          +media(1024px)
             display: block
-            top: 55%
-            left: 3.75%
+            top: 45%
+            left: 23.75%
             width: 104px
             height: 105px
             z-index: 2
@@ -580,10 +654,10 @@
         +m('fifth')
           display: none
 
-          +media(768px)
+          +media(1024px)
             display: block
-            top: 55%
-            left: 3.75%
+            top: 48%
+            left: 58.75%
             width: 87px
             height: 69px
             z-index: 0
@@ -607,12 +681,18 @@
       z-index: -1
 
       +media(768px)
-        left: 40%
+        left: 20%
+
+      +media(1024px)
+        left: 30%
+        top: 15%
 
     +m('big')
       +media(768px)
         width: 35%
         max-width: 250px
+      +media(1024px)
+        max-width: 350px
 
   +e('decor')
     position: absolute
@@ -852,4 +932,52 @@
 
         &::after
           background-color: #ffffff
+
+  +e('arrows')
+    +media(1024px)
+      position: absolute
+      padding: 0 30px
+      left: 0
+      box-sizing: border-box
+      top: 45%
+      width: 100%
+      display: flex
+      justify-content: space-between
+      transform: translateY(-50%) rotate(-5deg)
+      z-index: 1
+      transition: visibility 0s linear .33s, opacity .33s linear
+      visibility: hidden
+      opacity: 0
+
+  +e('arrow')
+    +media(1024px)
+      width: 50px
+      height: 50px
+      outline: none
+      background-color: transparent
+      background-image: url("../img/arrow.svg")
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+      opacity: 0.3
+      +ts()
+
+      &:hover
+        opacity: 1
+
+
+      +m('left')
+        transform: rotate(180deg)
+
+
+  +e('container')
+    +media(1024px)
+      position: relative
+
+      &:hover
+        .intro__arrows
+          visibility: visible
+          opacity: 1
+          transition-delay: 0s
+
 

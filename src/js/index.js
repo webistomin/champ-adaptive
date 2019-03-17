@@ -51,13 +51,14 @@ var slider = tns({
   container: '.intro__slider',
   items: 1,
   slideBy: 'page',
-  autoplay: false,
+  autoplay: true,
   autoplayButtonOutput: false,
-  speed: 1000,
+  speed: 1500,
   preventActionWhenRunning: false,
   preventScrollOnTouch: 'force',
   nav: true,
-  controls: false,
+  controls: true,
+  controlsContainer: '.intro__arrows',
   navContainer: '.intro__controls .intro__list'
 });
 
