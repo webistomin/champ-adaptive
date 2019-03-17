@@ -5,18 +5,41 @@
   position: relative
   z-index: 1
 
-  //&::before
-  //  content: ""
-  //  width: 102%
-  //  margin: 0 -1%
-  //  height: 80px
-  //  position: absolute
-  //  z-index: 1
-  //  top: 0
-  //  left: 0
-  //  background-position: bottom
-  //  background-size: cover
-  //  background-image: url("../img/header.svg")
+  &::after
+    content: ""
+    width: 100%
+    height: 80px
+    position: absolute
+    z-index: 1
+    bottom: 0
+    left: 0
+    background-position: top
+    background-size: cover
+    background-image: url("../img/controls.svg")
+
+    +media(600px)
+      height: 100px
+
+    +media(768px)
+      height: 200px
+      background-image: url("../img/controls-desktop.svg")
+
+  &::before
+    content: ""
+    width: 102%
+    margin: 0 -1%
+    height: 80px
+    position: absolute
+    z-index: 0
+    top: 0
+    left: 0
+    background-position: bottom
+    background-size: cover
+    background-image: url("../img/header.svg")
+    transform-style: preserve-3d
+
+    +media(768px)
+      height: 100px
     //margin: 0 -3px
 
   //+media(440px)
@@ -44,7 +67,7 @@
       min-height: 600px
 
     +media(768px)
-      height: calc(100vh - 170px)
+      height: 700px
 
   +e('slide')
     height: 100%
@@ -92,12 +115,13 @@
           height: 60px
           left: 11.5%
           top: 10%
-          z-index: 1000
+          z-index: 10
           background-image: url("../img/banana-slide/banana-1.png")
 
           +media(768px)
             width: 114px
             height: 114px
+            left: 15%
             background-image: url("../img/banana-slide/desktop/banana-1.png")
 
         +m('second')
@@ -111,6 +135,8 @@
           +media(768px)
             width: 154px
             height: 154px
+            left: 50%
+            top: 10%
             background-image: url("../img/banana-slide/desktop/banana-4.png")
 
         +m('third')
@@ -127,6 +153,8 @@
           +media(768px)
             width: 191px
             height: 200px
+            left: -5%
+            top: 30%
             background-image: url("../img/banana-slide/desktop/banana-3.png")
 
         +m('fourth')
@@ -139,6 +167,8 @@
 
           +media(768px)
             width: 170px
+            left: 80%
+            top: 20%
             height: 182px
             background-image: url("../img/banana-slide/desktop/banana-2.png")
 
@@ -207,6 +237,8 @@
           +media(768px)
             width: 167px
             height: 116px
+            top: 30%
+            left: 85%
             background-image: url("../img/caramel-slide/desktop/Image_28.png")
 
     +m('third')
@@ -214,7 +246,7 @@
         +m('first')
           width: 48px
           height: 51px
-          left: 12%
+          left: 8%
           top: 17%
           z-index: 2
           background-image: url("../img/cherry-slide/choco-7.png")
@@ -264,6 +296,8 @@
           +media(768px)
             width: 253px
             height: 239px
+            left: -12%
+            top: 25%
             background-image: url("../img/cherry-slide/desktop/cherry-2.png")
 
         +m('fifth')
@@ -277,6 +311,7 @@
           +media(768px)
             width: 80px
             height: 85px
+            left: 80%
             background-image: url("../img/cherry-slide/desktop/Image_10.png")
 
     +m('fourth')
@@ -325,6 +360,8 @@
           +media(768px)
             width: 211px
             height: 213px
+            top: 30%
+            left: -5%
             background-image: url("../img/strawberry-slide/desktop/strawberry-4.png")
 
         +m('fourth')
@@ -338,6 +375,7 @@
           +media(768px)
             width: 175px
             height: 139px
+            left: 80%
             background-image: url("../img/strawberry-slide/desktop/strawberry-2.png")
 
     +m('fifth')
@@ -392,6 +430,7 @@
           +media(768px)
             width: 112px
             height: 117px
+            top: 10%
             background-image: url("../img/nut-slide/desktop/nut-1.png")
 
         +m('fifth')
@@ -418,6 +457,7 @@
           +media(768px)
             width: 122px
             height: 89px
+            left: 80%
             background-image: url("../img/nut-slide/desktop/nut-3.png")
 
         +m('seventh')
@@ -431,6 +471,8 @@
           +media(768px)
             width: 52px
             height: 59px
+            left: 90%
+            top: 35%
             background-image: url("../img/nut-slide/desktop/nut-5.png")
 
     +m('sixth')
@@ -553,6 +595,13 @@
       left: 10px
       z-index: -1
 
+      +media(768px)
+        left: 40%
+
+    +m('big')
+      +media(768px)
+        width: 35%
+
   +e('decor')
     position: absolute
     background-size: contain
@@ -569,9 +618,19 @@
     color: #ffffff
     font-weight: 400
 
+    +m('dark')
+      color: #161615
+
+    +media(768px)
+      font-size: 30px
+
     +m('small')
       transform: rotate(-5deg)
       margin-bottom: 15px
+
+      +media(768px)
+        margin-bottom: 20px
+        margin-top: -20px
 
   +e('text')
     font-size: 12px
@@ -582,28 +641,27 @@
     text-align: center
     width: 236px
 
+    +m('dark')
+      color: #161615
+
+    +media(768px)
+      font-size: 18px
+      letter-spacing: 0.02px
+      width: 500px
+
   +e('list')
     display: flex
     align-items: center
     justify-content: center
     transform: rotate(-5deg)
     outline: none
-    padding-top: 36px
-
-    +media(580px)
-      padding-top: 56px
+    position: relative
+    z-index: 2
 
   +e('controls')
-    position: relative
-    background-image: url("../img/controls.svg")
-    background-size: cover
-    min-height: 91px
-    margin-top: -80px
-    margin-left: -2px
-    margin-right: -2px
-
-    +media(580px)
-      margin-top: -96px
+    position: absolute
+    bottom: 15px
+    width: 100%
 
   +e('control')
     width: 16px
@@ -692,6 +750,9 @@
   +e('tag')
     position: relative
     max-width: 300px
+
+    +media(768px)
+      max-width: none
 
   +e('contains')
     padding-top: 20px
