@@ -14,7 +14,7 @@
     left: 0
     background-position: top
     background-size: cover
-    background-image: url("../img/controls.svg")
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='323' height='91' viewBox='0 0 323 91'%3E%3Cdefs%3E%3Cpath id='v64ba' d='M-3 569.5v-61.34L320 479v90.5z'/%3E%3C/defs%3E%3Cg%3E%3Cg transform='translate(3 -479)'%3E%3Cuse fill='%23fff' xlink:href='%23v64ba'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
     pointer-events: none
 
     +media(600px)
@@ -22,7 +22,10 @@
 
     +media(768px)
       height: 200px
-      background-image: url("../img/controls-desktop.svg")
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1440' height='130' viewBox='0 0 1440 130'%3E%3Cdefs%3E%3Cpath id='a2m0a' d='M0 810h1440V680z'/%3E%3C/defs%3E%3Cg%3E%3Cg transform='translate(0 -680)'%3E%3Cuse fill='%23fff' xlink:href='%23a2m0a'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+
+    +media(1700px)
+      height: 230px
 
   &::before
     content: ""
@@ -30,17 +33,20 @@
     margin: 0 -1%
     height: 80px
     position: absolute
-    z-index: 0
+    z-index: 2
     top: 0
     left: 0
     background-position: bottom
     background-size: cover
-    background-image: url("../img/header.svg")
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='320' height='83' viewBox='0 0 320 83'%3E%3Cdefs%3E%3Cpath id='oa3da' d='M.501.5H319.5v53.656L.501 82.955z'/%3E%3C/defs%3E%3Cg%3E%3Cg%3E%3Cuse fill='%23161615' xlink:href='%23oa3da'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
     //transform-style: preserve-3d
 
     +media(768px)
       height: 140px
-      background-image: url("../img/header-desktop.svg")
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1440' height='130' viewBox='0 0 1440 130'%3E%3Cdefs%3E%3Cpath id='flyta' d='M1440 0H0v130z'/%3E%3C/defs%3E%3Cg%3E%3Cg%3E%3Cuse fill='%23161615' xlink:href='%23flyta'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+
+    +media(1700px)
+      height: 200px
     //margin: 0 -3px
 
   //+media(440px)
@@ -72,6 +78,9 @@
 
     +media(1024px)
       height: 810px
+
+    +media(1700px)
+      height: 900px
 
   +e('slide')
     height: 100%
@@ -763,6 +772,9 @@
     +media(1024px)
       bottom: 50px
 
+    +media(1700px)
+      bottom: 70px
+
   +e('control')
     width: 16px
     height: 17px
@@ -933,10 +945,14 @@
         &::after
           background-color: #ffffff
 
+      +media(1700px)
+        margin-bottom: 70px
+
   +e('arrows')
     +media(1024px)
       position: absolute
       padding: 0 30px
+      outline: none
       left: 0
       box-sizing: border-box
       top: 45%
@@ -955,7 +971,7 @@
       height: 50px
       outline: none
       background-color: transparent
-      background-image: url("../img/arrow.svg")
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='49' height='35' viewBox='0 0 49 35'%3E%3Cdefs%3E%3Cpath id='67awa' d='M1388.331 322.569l-3.28 3.966 11.524 9.67-38.232 3.345.448 5.121 38.486-3.367-9.902 11.8 3.92 3.336 15.454-18.417z'/%3E%3C/defs%3E%3Cg%3E%3Cg transform='translate(-1358 -322)'%3E%3Cuse xlink:href='%2367awa'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A")
       background-size: contain
       background-position: center
       background-repeat: no-repeat
