@@ -1,0 +1,176 @@
+.features
+  padding-bottom: 70px
+  position: relative
+  z-index: 1
+
+  +media(768px)
+    padding-bottom: 100px
+
+  +e('img')
+    +m('logo')
+      width: 74%
+      max-width: 240px
+
+      +media(768px)
+        width: 100%
+        max-width: 358px
+
+  +e('pic')
+    text-align: center
+
+  +e('subtitle')
+    margin: 16px 0
+    text-align: center
+    color: #161615
+    font-size: 16px
+    font-style: italic
+    line-height: 24px
+    font-weight: 400
+
+    & br
+      display: none
+
+    +media(768px)
+      font-size: 30px
+      line-height: 1.2
+
+      & br
+        display: block
+
+  +e('list')
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 30px
+
+    +media(768px)
+      flex-direction: row
+      justify-content: space-between
+
+    +media(1024px)
+      justify-content: center
+
+  +e('item')
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 276px
+    height: 192px
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1)
+    background-color: #ffffff
+    text-align: center
+    box-sizing: border-box
+    padding: 30px
+    margin-bottom: 16px
+
+    &:last-child
+      margin-bottom: 0
+
+    +media(768px)
+      width: 30%
+      max-width: 275px
+
+    +media(1024px)
+      margin: 0 8px 0 0
+      padding-top: 40px
+
+      &:last-child
+        margin-right: 0
+
+  +e('desc')
+    color: #161615
+    font-size: 14px
+    font-style: italic
+    letter-spacing: 0.02px
+    line-height: 22px
+    padding-top: 15px
+
+  +e('feature')
+    transform: skew(0, 5deg)
+
+  +e('decor')
+    display: none
+
+    +media(768px)
+      display: block
+      user-select: none
+      position: absolute
+      transform-style: flat
+
+      +m('first')
+        top: 10%
+        left: 84%
+
+        img
+          animation: moveDown 2s infinite alternate
+
+      +m('second')
+        top: 27%
+        left: 90%
+        z-index: 1
+
+        img
+          animation: moveDown 4s infinite alternate
+
+      +m('third')
+        top: 50%
+        left: 80%
+        z-index: 1
+
+        img
+          animation: moveUp 3s infinite alternate
+
+      +m('fourth')
+        right: -4%
+        top: 90%
+        z-index: 1
+
+        img
+          animation: moveDown 2s infinite alternate
+
+      +m('fifth')
+        left: 80%
+        top: 70%
+
+        img
+          animation: moveDown 3s infinite alternate
+
+      +m('sixth')
+        left: 15%
+        top: 90%
+
+        img
+          animation: moveUp 2s infinite alternate
+
+      +m('seventh')
+        left: 5%
+        top: 60%
+        width: 67px
+        z-index: 1
+
+        img
+          animation: moveDown 3s infinite alternate
+
+      +m('eigth')
+        left: -5%
+        top: 85%
+
+        img
+          animation: moveUp 4s infinite alternate
+
+      +m('tenth')
+        left: -5%
+        top: 10%
+        z-index: -1
+
+        img
+          animation: moveDown 5s infinite alternate
+
+      +m('eleventh')
+        left: 10%
+        top: 25%
+
+        img
+          animation: moveUp 5s infinite alternate
+

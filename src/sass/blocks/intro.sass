@@ -1,0 +1,720 @@
+.intro
+  margin-bottom: 60px
+  //margin-top: -40px
+  overflow: hidden
+  position: relative
+  z-index: 1
+
+  //&::before
+  //  content: ""
+  //  width: 102%
+  //  margin: 0 -1%
+  //  height: 80px
+  //  position: absolute
+  //  z-index: 1
+  //  top: 0
+  //  left: 0
+  //  background-position: bottom
+  //  background-size: cover
+  //  background-image: url("../img/header.svg")
+    //margin: 0 -3px
+
+  //+media(440px)
+  //  margin-top: -48px
+  //
+  //+media(540px)
+  //  margin-top: -52px
+  //
+  //+media(580px)
+  //  margin-top: -60px
+  //
+  //+media(660px)
+  //  margin-top: -70px
+  //
+  //+media(768px)
+  //  margin-top: -100px
+
+  +e('slider')
+    margin-bottom: 24px
+    height: calc(100vh - 120px)
+    min-height: 540px
+    box-sizing: border-box
+
+    +media(660px)
+      min-height: 600px
+
+    +media(768px)
+      height: calc(100vh - 170px)
+
+  +e('slide')
+    height: 100%
+    padding-bottom: 40px
+
+    +m('yellow')
+      background-image: linear-gradient(29deg, #ffdd4d 0%, #fff189 100%)
+
+    +m('orange')
+      background-image: linear-gradient(29deg, #f08231 0%, #ffc87c 100%)
+
+    +m('pink')
+      background-image: linear-gradient(29deg, #ba253c 0%, #ff8080 100%)
+
+    +m('lightpink')
+      background-image: linear-gradient(29deg, #ba255e 0%, #ffa2b7 100%)
+
+    +m('green')
+      background-image: linear-gradient(29deg, #b7d85e 0%, #e2ffa2 100%)
+
+    +m('blue')
+      background-image: linear-gradient(30deg, #ffd1a0 0%, #fbf8f5 100%)
+
+    +m('brown')
+      background-image: linear-gradient(29deg, #712626 0%, #d8866d 100%)
+
+
+  +e('inner')
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 14px
+    position: relative
+    overflow: hidden
+
+    +media(660px)
+      padding-top: 30px
+
+    +m('first')
+      .intro__decor
+        +m('first')
+          width: 60px
+          height: 60px
+          left: 11.5%
+          top: 10%
+          z-index: 1000
+          background-image: url("../img/banana-slide/banana-1.png")
+
+          +media(768px)
+            width: 114px
+            height: 114px
+            background-image: url("../img/banana-slide/desktop/banana-1.png")
+
+        +m('second')
+          width: 74px
+          height: 74px
+          left: 40%
+          top: 16%
+          z-index: 0
+          background-image: url("../img/banana-slide/banana-4.png")
+
+          +media(768px)
+            width: 154px
+            height: 154px
+            background-image: url("../img/banana-slide/desktop/banana-4.png")
+
+        +m('third')
+          width: 88px
+          height: 94px
+          left: -5%
+          top: 40%
+          z-index: 2
+          background-image: url("../img/banana-slide/banana-3.png")
+
+          +media(540px)
+            left: 10%
+
+          +media(768px)
+            width: 191px
+            height: 200px
+            background-image: url("../img/banana-slide/desktop/banana-3.png")
+
+        +m('fourth')
+          width: 80px
+          height: 85px
+          left: 70%
+          top: 33%
+          z-index: 2
+          background-image: url("../img/banana-slide/banana-2.png")
+
+          +media(768px)
+            width: 170px
+            height: 182px
+            background-image: url("../img/banana-slide/desktop/banana-2.png")
+
+    +m('second')
+      .intro__decor
+        +m('first')
+          width: 90px
+          height: 80px
+          background-image: url("../img/caramel-slide/Image_30.png")
+          top: 10%
+          left: 5%
+          z-index: 2
+
+          +media(768px)
+            width: 211px
+            height: 188px
+            background-image: url("../img/caramel-slide/desktop/Image_30.png")
+
+        +m('second')
+          width: 36px
+          height: 28px
+          top: 11%
+          left: 62.8%
+          z-index: 2
+          background-image: url("../img/caramel-slide/Image_29.png")
+
+          +media(768px)
+            width: 75px
+            height: 56px
+            background-image: url("../img/caramel-slide/desktop/Image_29.png")
+
+        +m('third')
+          width: 27px
+          height: 30px
+          top: 12%
+          left: 82.8%
+          z-index: 0
+          background-image: url("../img/caramel-slide/Image_31.png")
+
+          +media(768px)
+            width: 53px
+            height: 54px
+            background-image: url("../img/caramel-slide/desktop/Image_31.png")
+
+        +m('fourth')
+          width: 34px
+          height: 37px
+          top: 40%
+          left: 5%
+          z-index: 0
+          background-image: url("../img/caramel-slide/Image_27.png")
+
+          +media(768px)
+            width: 71px
+            height: 78px
+            background-image: url("../img/caramel-slide/desktop/Image_27.png")
+
+        +m('fifth')
+          width: 79px
+          height: 55px
+          top: 40%
+          left: 60%
+          z-index: 2
+          background-image: url("../img/caramel-slide/Image_28.png")
+
+          +media(768px)
+            width: 167px
+            height: 116px
+            background-image: url("../img/caramel-slide/desktop/Image_28.png")
+
+    +m('third')
+      .intro__decor
+        +m('first')
+          width: 48px
+          height: 51px
+          left: 12%
+          top: 17%
+          z-index: 2
+          background-image: url("../img/cherry-slide/choco-7.png")
+
+          +media(768px)
+            width: 89px
+            height: 94px
+            background-image: url("../img/cherry-slide/desktop/choco-7.png")
+
+        +m('second')
+          width: 30px
+          height: 32px
+          left: 43%
+          top: 20%
+          z-index: 0
+          background-image: url("../img/cherry-slide/Image_4.png")
+
+          +media(768px)
+            width: 57px
+            height: 62px
+            background-image: url("../img/cherry-slide/desktop/Image_4.png")
+
+        +m('third')
+          width: 48px
+          height: 44px
+          left: 67%
+          top: 12%
+          z-index: 0
+          background-image: url("../img/cherry-slide/cherry-1.png")
+
+          +media(768px)
+            width: 104px
+            height: 95px
+            background-image: url("../img/cherry-slide/desktop/cherry-1.png")
+
+        +m('fourth')
+          width: 114px
+          height: 108px
+          left: -12%
+          top: 35%
+          z-index: 2
+          background-image: url("../img/cherry-slide/cherry-2.png")
+
+          +media(540px)
+            left: 8%
+
+          +media(768px)
+            width: 253px
+            height: 239px
+            background-image: url("../img/cherry-slide/desktop/cherry-2.png")
+
+        +m('fifth')
+          width: 40px
+          height: 23px
+          left: 68%
+          top: 42%
+          z-index: 2
+          background-image: url("../img/cherry-slide/Image_10.png")
+
+          +media(768px)
+            width: 80px
+            height: 85px
+            background-image: url("../img/cherry-slide/desktop/Image_10.png")
+
+    +m('fourth')
+      .intro__decor
+        +m('first')
+          width: 49px
+          height: 50px
+          background-image: url("../img/strawberry-slide/strawberry_[H]_[2].png")
+          top: 15%
+          left: 10%
+          z-index: 0
+
+          +media(540px)
+            left: 20%
+            top: 20%
+
+          +media(768px)
+            width: 97px
+            height: 97px
+            background-image: url("../img/strawberry-slide/desktop/strawberry_[H]_[2].png")
+
+        +m('second')
+          width: 72px
+          height: 72px
+          background-image: url("../img/strawberry-slide/strawberry-3.png")
+          top: 16%
+          left: 37%
+          z-index: 1
+
+          +media(540px)
+            left: 50%
+
+          +media(768px)
+            width: 161px
+            height: 162px
+            background-image: url("../img/strawberry-slide/desktop/strawberry-3.png")
+
+        +m('third')
+          width: 70px
+          height: 86px
+          background-image: url("../img/strawberry-slide/strawberry-4.png")
+          top: 40%
+          left: 0
+          z-index: 2
+
+          +media(768px)
+            width: 211px
+            height: 213px
+            background-image: url("../img/strawberry-slide/desktop/strawberry-4.png")
+
+        +m('fourth')
+          width: 90px
+          height: 72px
+          background-image: url("../img/strawberry-slide/strawberry-2.png")
+          top: 30%
+          left: 70%
+          z-index: 2
+
+          +media(768px)
+            width: 175px
+            height: 139px
+            background-image: url("../img/strawberry-slide/desktop/strawberry-2.png")
+
+    +m('fifth')
+      .intro__decor
+        +m('first')
+          width: 35px
+          height: 41px
+          top: 20%
+          left: 5%
+          background-image: url("../img/nut-slide/nut-10.png")
+          z-index: 0
+
+          +media(768px)
+            width: 73px
+            height: 85px
+            background-image: url("../img/nut-slide/desktop/nut-10.png")
+
+        +m('second')
+          top: 10%
+          left: 27%
+          z-index: 2
+          width: 42px
+          height: 39px
+          background-image: url("../img/nut-slide/nut-2.png")
+
+          +media(768px)
+            width: 93px
+            height: 88px
+            background-image: url("../img/nut-slide/desktop/nut-2.png")
+
+        +m('third')
+          top: 20%
+          left: 60%
+          z-index: 0
+          width: 32px
+          height: 31px
+          background-image: url("../img/nut-slide/nut-4.png")
+
+          +media(768px)
+            width: 72px
+            height: 70px
+            background-image: url("../img/nut-slide/desktop/nut-4.png")
+
+        +m('fourth')
+          top: 25%
+          left: 85%
+          z-index: 2
+          width: 51px
+          height: 52px
+          background-image: url("../img/nut-slide/nut-1.png")
+
+          +media(768px)
+            width: 112px
+            height: 117px
+            background-image: url("../img/nut-slide/desktop/nut-1.png")
+
+        +m('fifth')
+          top: 50%
+          left: -2%
+          z-index: 2
+          width: 57px
+          height: 44px
+          background-image: url("../img/nut-slide/nut-9.png")
+
+          +media(768px)
+            width: 126px
+            height: 99px
+            background-image: url("../img/nut-slide/desktop/nut-9.png")
+
+        +m('sixth')
+          top: 45%
+          left: 50%
+          z-index: 2
+          width: 54px
+          height: 40px
+          background-image: url("../img/nut-slide/nut-3.png")
+
+          +media(768px)
+            width: 122px
+            height: 89px
+            background-image: url("../img/nut-slide/desktop/nut-3.png")
+
+        +m('seventh')
+          top: 42%
+          left: 82%
+          z-index: 0
+          width: 24px
+          height: 26px
+          background-image: url("../img/nut-slide/nut-5.png")
+
+          +media(768px)
+            width: 52px
+            height: 59px
+            background-image: url("../img/nut-slide/desktop/nut-5.png")
+
+    +m('sixth')
+      .intro__decor
+        +m('first')
+          width: 117px
+          height: 116px
+          left: -2%
+          top: 20%
+          background-image: url("../img/vanilla-slide/vanilla-2.png")
+
+          +media(768px)
+            width: 258px
+            height: 255px
+            background-image: url("../img/vanilla-slide/desktop/vanilla-2.png")
+
+        +m('second')
+          width: 98px
+          height: 102px
+          left: 72%
+          top: 8%
+          z-index: 0
+          background-image: url("../img/vanilla-slide/vanilla-3.png")
+
+          +media(768px)
+            width: 206px
+            height: 214px
+            background-image: url("../img/vanilla-slide/desktop/vanilla-3.png")
+
+        +m('third')
+          width: 144px
+          height: 144px
+          left: 52%
+          top: 24%
+          z-index: 0
+          background-image: url("../img/vanilla-slide/Group_64.png")
+
+          +media(768px)
+            width: 345px
+            height: 346px
+            background-image: url("../img/vanilla-slide/desktop/Group_64.png")
+
+    +m('seventh')
+      .intro__decor
+        +m('first')
+          top: 10%
+          left: 3.5%
+          width: 57px
+          height: 57px
+          background-image: url("../img/chocolate-slide/choco-1.png")
+
+          +media(768px)
+            width: 105px
+            height: 106px
+            background-image: url("../img/chocolate-slide/desktop/choco-1.png")
+
+        +m('second')
+          top: 35%
+          right: 0
+          width: 48px
+          height: 41px
+          background-image: url("../img/chocolate-slide/choco-4.png")
+
+          +media(768px)
+            width: 97px
+            height: 82px
+            background-image: url("../img/chocolate-slide/desktop/choco-4.png")
+
+        +m('third')
+          top: 55%
+          left: 3.75%
+          width: 35px
+          height: 36px
+          background-image: url("../img/chocolate-slide/choco-5.png")
+          z-index: 0
+
+          +media(768px)
+            width: 58px
+            height: 58px
+            background-image: url("../img/chocolate-slide/desktop/choco-5.png")
+
+        +m('fourth')
+          display: none
+
+          +media(768px)
+            display: block
+            top: 55%
+            left: 3.75%
+            width: 104px
+            height: 105px
+            z-index: 2
+            background-image: url("../img/chocolate-slide/desktop/choco-3.png")
+
+        +m('fifth')
+          display: none
+
+          +media(768px)
+            display: block
+            top: 55%
+            left: 3.75%
+            width: 87px
+            height: 69px
+            z-index: 0
+            background-image: url("../img/chocolate-slide/desktop/choco-2.png")
+
+
+  +e('pic')
+    text-align: center
+    z-index: 1
+    position: relative
+    top: auto
+    left: auto
+
+    +media(768px)
+      margin-bottom: -50px
+
+    +m('absolute')
+      position: absolute
+      top: 60px
+      left: 10px
+      z-index: -1
+
+  +e('decor')
+    position: absolute
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    transform-style: preserve-3d
+    backface-visibility: hidden
+
+  +e('title')
+    margin: 0
+    text-align: center
+    font-size: 16px
+    font-style: italic
+    color: #ffffff
+    font-weight: 400
+
+    +m('small')
+      transform: rotate(-5deg)
+      margin-bottom: 15px
+
+  +e('text')
+    font-size: 12px
+    font-style: italic
+    letter-spacing: 0.01px
+    transform: rotate(-5deg)
+    color: #ffffff
+    text-align: center
+    width: 236px
+
+  +e('list')
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: rotate(-5deg)
+    outline: none
+    padding-top: 36px
+
+    +media(580px)
+      padding-top: 56px
+
+  +e('controls')
+    position: relative
+    background-image: url("../img/controls.svg")
+    background-size: cover
+    min-height: 91px
+    margin-top: -80px
+    margin-left: -2px
+    margin-right: -2px
+
+    +media(580px)
+      margin-top: -96px
+
+  +e('control')
+    width: 16px
+    height: 17px
+    position: relative
+    margin-right: 23px
+    border-radius: 50%
+    outline: none
+    cursor: pointer
+
+    &::before
+      content: ""
+      position: absolute
+      left: 50%
+      top: 50%
+      height: 25px
+      width: 25px
+      background-color: inherit
+      opacity: 0.3
+      transform: translateY(-50%) translateX(-50%) scale(0)
+      border-radius: inherit
+      +ts()
+
+    &:hover
+      &::before
+        width: 25px
+
+    &:last-child
+      margin-right: 0
+
+    +m('yellow')
+      background-color: #fcd04c
+
+    +m('orange')
+      background-color: #fc8b4c
+
+    +m('pink')
+      background-color: #ff3e5c
+
+    +m('lightpink')
+      background-color: #ff759e
+
+    +m('green')
+      background-color: #7cb518
+
+    +m('blue')
+      background-color: #07baec
+
+    +m('brown')
+      background-color: #533e2d
+
+    &.tns-nav-active
+      &::before
+        transform: translateY(-50%) translateX(-50%) scale(1)
+
+    +media(768px)
+      &.tns-nav-active
+        .intro__desc
+          display: block
+
+  +e('desc')
+    display: none
+    position: absolute
+    left: 50%
+    top: -42px
+    transform: translateX(-50%) skew(0, -5deg)
+    font-size: 10px
+    font-weight: 400
+    font-style: italic
+    background-color: #161615
+    color: #ffffff
+    text-transform: uppercase
+    padding: 7px 14px 7px 5px
+    white-space: nowrap
+
+    +media(768px)
+      font-size: 14px
+
+    &::before
+      +triangle(5px, #161615, down)
+      position: absolute
+      bottom: -4px
+      left: 50%
+      transform: translateX(-50%) skew(0, -5deg)
+
+  +e('tag')
+    position: relative
+    max-width: 300px
+
+  +e('contains')
+    padding-top: 20px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    transform: rotate(-5deg)
+
+  +e('contain')
+    color: #ffffff
+    font-size: 10px
+    font-weight: 400
+    font-style: italic
+    text-transform: uppercase
+    padding: 5px 7px 3px 6px
+    background-color: #161615
+    margin-left: 5px
+    margin-bottom: 5px
+    transform: skewX(-5deg)
+    white-space: nowrap
+
+    & span
+      transform: skewX(5deg)
+
+    +media(768px)
+      font-size: 14px

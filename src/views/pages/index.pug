@@ -1,0 +1,177 @@
+extends ../layouts/default.pug
+
+block variables
+  - var pageTitle = 'Главная'
+  - var pageDescription = 'Главная страница'
+  - var pageKeywords = 'Вёрстка'
+
+block content
+  +b.SECTION.features(id='features-scene')
+    +e(data-depth="0.80").FIGURE.decor._first.parallax-layer
+      +e.IMG(src='img/caramel-slide/desktop/Image_31.png' width='44' height='52').img
+    +e(data-depth="0.50").FIGURE.decor._second.parallax-layer
+      +e.IMG(src='img/features-decor/Image_29.png' width='88' height='79').img
+    +e(data-depth="0.60").FIGURE.decor._third.parallax-layer
+      +e.IMG(src='img/features-decor/Image_10.png' width='68' height='61').img
+    +e(data-depth="0.40").FIGURE.decor._fourth.parallax-layer
+      +e.IMG(src='img/features-decor/choco-1.png' width='96' height='83').img
+    +e(data-depth="0.40").FIGURE.decor._fifth.parallax-layer
+      +e.IMG(src='img/features-decor/Image_4.png' width='72' height='76').img
+    +e(data-depth="0.60").FIGURE.decor._sixth.parallax-layer
+      +e.IMG(src='img/nut-5.png' width='55' height='60').img
+    +e(data-depth="0.70").FIGURE.decor._seventh.parallax-layer
+      +e.IMG(src='img/nut-slide/desktop/nut-9.png' width='107' height='74').img
+    +e(data-depth="0.80").FIGURE.decor._eigth.parallax-layer
+      +e.IMG(src='img/nut-slide/desktop/nut-10.png' width='69' height='76').img
+    +e(data-depth="0.30").FIGURE.decor._tenth.parallax-layer
+      +e.IMG(src='img/strawberry-slide/desktop/strawberry-3.png' width='132' height='129').img
+    +e(data-depth="0.50").FIGURE.decor._eleventh.parallax-layer
+      +e.IMG(src='img/strawberry-slide/desktop/strawberry-2.png' width='149' height='130').img
+    +e.container.container
+
+      +e.FIGURE.pic
+        +e.IMG(src='img/champ-logo-transparent.svg' width='357' height='99').img._logo
+
+      +e.H2.subtitle Champ&nbsp;&mdash; протеиновые продукты, которые
+        +e.BR
+        | помогают быстро восполнить силы и
+        +e.BR
+        | поддерживать себя в&nbsp;хорошей форме. Вкусный и
+        +e.BR
+        | полезный перекус на&nbsp;все случаи жизни.
+      +e.UL.list
+        +e.LI.item(
+        data-aos="feature-anim"
+        data-aos-offset="0"
+        data-aos-delay="0"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        data-aos-anchor=".features"
+        )
+          +e.FIGURE.feature
+            +e.IMG(src='img/feature-1.svg' width='50' height='56').img
+          +e.P.desc Содержат
+            +e.BR
+            | Многокомпонентный
+            +e.BR
+            | протеин
+        +e.LI.item(
+        data-aos="feature-anim"
+        data-aos-offset="0"
+        data-aos-delay="100"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        data-aos-anchor=".features"
+        )
+          +e.FIGURE.feature
+            +e.IMG(src='img/feature-2.svg' width='57' height='58').img
+          +e.P.desc Обогащены витаминами
+            +e.BR
+            | и микроэлементами
+        +e.LI.item(
+        data-aos="feature-anim"
+        data-aos-offset="0"
+        data-aos-delay="0"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        data-aos-anchor=".features"
+        )
+          +e.FIGURE.feature
+            +e.IMG(src='img/feature-3.svg' width='50' height='56').img
+          +e.P.desc Содержат пищевые
+            +e.BR
+            | волокна
+
+  +b.SECTION.about.parallax-container
+    +e.container.container.parallax-wrapper(id='about-scene')
+      +e.box
+        +e.wrap(
+        data-aos="fade-down-right"
+        data-aos-offset="0"
+        data-aos-delay="0"
+        data-aos-duration="700"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+        id='about-snacks'
+        )
+          +e(data-depth="0.50").FIGURE.pic._top.parallax-layer
+            +e.PICTURE
+              +e.SOURCE(media="(min-width: 768px)" srcset="img/protein-bars.png")
+              +e.IMG(src='img/protein-bars-mobile.png').img
+        +e.col
+          +e.H2.title
+            +e.IMG(src='img/champ-logo.svg' width='132' height='50')
+
+          +e.H3.title._text Протеиновые батончики
+
+          +e.P.text Пять разных вкусов с&nbsp;многокомпонентным белком, витаминами, жиросжигающими компонентами и&nbsp;антиоксидантами&nbsp;&mdash; все это батончики CHAMP!, которые с&nbsp;легкостью помещаются в&nbsp;ваш карман.
+
+          +e.P.text Специально для тех, кто занимается фитнесом, ведет активный образ жизни и&nbsp;всегда стремится к&nbsp;своей цели!
+          +e.UL.list
+            +e.LI.item
+              +e.SPAN PROTEIN 17%
+            +e.LI.item
+              +e.SPAN VITAMIN PREMIX
+            +e.LI.item
+              +e.SPAN COLLAGEN
+            +e.LI.item
+              +e.SPAN COENZYM Q10
+            +e.LI.item
+              +e.SPAN L – CARNITIN
+
+          +e.A(href='#').btn.btn  Подробнее
+
+  +b.SECTION.about._blue.parallax-container
+    +e.container.container.parallax-wrapper(id='about-scene-2')
+      +e.box._reverse
+        +e.wrap(
+        data-aos="fade-down-left"
+        data-aos-offset="0"
+        data-aos-delay="200"
+        data-aos-duration="700"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+        id='about-cocktails'
+        )
+          +e(data-depth="0.40").FIGURE.pic._top._width.parallax-layer
+            +e.PICTURE
+              +e.SOURCE(media="(min-width: 768px)" srcset="img/about-2.png")
+              +e.IMG(src='img/protein-cocktail-vanila.png').img
+
+        +e.col
+
+          +e.H2.title
+            +e.IMG(src='img/champ-logo.svg' width='132' height='50')
+
+          +e.H3.title._text._white ПРОТЕИНОВЫЕ КОКТЕЙЛИ CHAMP!
+
+          +e.P.text._white Вкусный, нежный, сытный и&nbsp;полезный перекус, который не&nbsp;только улучшит настроение, но&nbsp;и&nbsp;восстановит силы, обеспечив энергией для новых побед.
+
+          +e.P.text._white Готовить очень просто: залейте молоком, холодной или горячей водой и&nbsp;перемешайте. Хотите получить более воздушную текстуру&nbsp;&mdash; взбейте напиток в&nbsp;шейкере или блендере.
+
+          +e.UL.list
+            +e.LI.item
+              +e.SPAN PROTEIN 25%
+            +e.LI.item
+              +e.SPAN С ПРЕБИОТИКАМИ
+            +e.LI.item
+              +e.SPAN НА ФРУКТОЗЕ
+            +e.LI.item
+              +e.SPAN БЕЗ КРАСИТЕЛЕЙ И КОНСЕРВАНТОВ
+            +e.LI.item
+              +e.SPAN БЕЗ ГЛЮТЕНА
+            +e.LI.item
+              +e.SPAN ИСТОЧНИК ХРОМА
+
+          +e.A(href='#').btn.btn  Подробнее
