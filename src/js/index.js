@@ -13,38 +13,47 @@ const seventhSlideScene = document.getElementById('seventh-slide-scene');
 
 const footerParallax = new Parallax(footerScene, {
   selector: '.parallax-layer',
+  pointerEvents: true,
 });
 
 const featursParallax = new Parallax(featuresScene, {
   selector: '.parallax-layer',
+  pointerEvents: true,
 });
 
 const firstSlideParallax = new Parallax(firstSlideScene, {
   selector: '.parallax-layer',
+  pointerEvents: true,
 });
 
 const secondSlideParallax = new Parallax(secondSlideScene, {
   selector: '.parallax-layer',
+  pointerEvents: true,
 });
 
 const thirdSlideParallax = new Parallax(thirdSlideScene, {
   selector: '.parallax-layer',
+  pointerEvents: true,
 });
 
 const fourthSlideParallax = new Parallax(fourthSlideScene, {
   selector: '.parallax-layer',
+  pointerEvents: true,
 });
 
 const fifthSlideParallax = new Parallax(fifthSlideScene, {
   selector: '.parallax-layer',
+  pointerEvents: true,
 });
 
 const sixthSlideParallax = new Parallax(sixthSlideScene, {
   selector: '.parallax-layer',
+  pointerEvents: true,
 });
 
 const seventhSlideParallax = new Parallax(seventhSlideScene, {
   selector: '.parallax-layer',
+  pointerEvents: true,
 });
 
 var slider = tns({
@@ -54,8 +63,6 @@ var slider = tns({
   autoplay: true,
   autoplayButtonOutput: false,
   speed: 1500,
-  preventActionWhenRunning: false,
-  preventScrollOnTouch: 'force',
   nav: true,
   controls: true,
   controlsContainer: '.intro__arrows',
