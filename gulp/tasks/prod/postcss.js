@@ -8,7 +8,6 @@ const postCSSObjectFit = require('postcss-object-fit-images');
 const postCSSSorting = require('postcss-sorting');
 
 const plugins = [
-  postCSSFlexBugs(),
   postCSSInitial({
     reset: 'all',
     replace: true
