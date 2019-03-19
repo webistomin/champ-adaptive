@@ -60,7 +60,7 @@ var slider = tns({
   container: '.intro__slider',
   items: 1,
   slideBy: 'page',
-  autoplay: true,
+  autoplay: false,
   autoplayButtonOutput: false,
   speed: 1500,
   nav: true,

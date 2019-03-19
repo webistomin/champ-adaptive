@@ -797,6 +797,15 @@
         transform: translateY(-50%) translateX(-50%) scale(1)
         +ts()
 
+    &::after
+      content: ""
+      +triangle(5px, #161615, down)
+      position: absolute
+      bottom: 24.5px
+      left: 57%
+      display: none
+      transform: translateX(-50%) skewX(-5deg) skewY(-5deg) rotate(5deg)
+
     &:last-child
       margin-right: 0
 
@@ -825,6 +834,10 @@
       &::before
         transform: translateY(-50%) translateX(-50%) scale(1)
 
+      &::after
+        @media (min-width: 768px)
+          display: block
+
     +media(768px)
       &.tns-nav-active
         .intro__desc
@@ -848,12 +861,12 @@
     +media(768px)
       font-size: 14px
 
-    &::before
-      +triangle(5px, #161615, down)
-      position: absolute
-      bottom: -4px
-      left: 50%
-      transform: translateX(-50%) skew(0, -5deg)
+    //&::before
+    //  +triangle(5px, #161615, down)
+    //  position: absolute
+    //  bottom: -4px
+    //  left: 54%
+    //  transform: translateX(-50%) skew(0, -5deg)
 
   +e('tag')
     position: relative
