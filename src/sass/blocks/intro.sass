@@ -27,6 +27,21 @@
     +media(1700px)
       height: 230px
 
+    +media(2000px)
+      height: 260px
+
+    +media(2500px)
+      height: 290px
+
+    +media(2800px)
+      height: 320px
+
+    +media(3200px)
+      height: 350px
+
+    +media(3500px)
+      height: 550px
+
   &::before
 
     //transform-style: preserve-3d
@@ -72,6 +87,12 @@
     +media(1700px)
       height: 900px
 
+    +media(2000px)
+      height: 1000px
+
+    +media(3500px)
+      height: 1300px
+
   +e('slide')
     height: 100%
     padding-bottom: 40px
@@ -110,13 +131,21 @@
     padding: 14px
     position: relative
     overflow: hidden
+    max-width: 500px
+    margin: 0 auto
+    z-index: 1
     //pointer-events: all !important
 
     +media(660px)
       padding-top: 30px
 
+    +media(768px)
+      max-width: 1000px
+
     +media(1024px)
       justify-content: flex-end
+      max-width: 1300px
+      margin: 0 auto
 
     +m('first')
       .intro__decor
@@ -404,7 +433,7 @@
           z-index: 2
 
           +media(768px)
-            width: 211px
+            width: 150px
             height: 213px
             top: 30%
             left: -5%
@@ -580,13 +609,16 @@
           height: 144px
           left: 52%
           top: 24%
-          z-index: 0
-          background-image: url("../img/vanilla-slide/Group_64.png")
+          z-index: 1
+          background-image: url("../img/vanilla-slide/Group 64@2x.png")
 
           +media(768px)
-            width: 345px
+            width: 230px
             height: 346px
-            background-image: url("../img/vanilla-slide/desktop/Group_64.png")
+            background-image: url("../img/vanilla-slide/desktop/Group 64@2x.png")
+
+          +media(1024px)
+            width: 346px
 
     +m('seventh')
       .intro__decor
@@ -666,7 +698,7 @@
 
   +e('pic')
     text-align: center
-    z-index: 1
+    z-index: 10
     position: relative
     top: 20px
     left: auto
@@ -679,7 +711,7 @@
     +m('absolute')
       position: absolute
       top: 60px
-      left: 8%
+      left: 8%f
       z-index: -1
 
       +media(768px)
@@ -691,6 +723,7 @@
 
     +m('big')
       width: 210px
+      //z-index: 2
 
       +media(768px)
         width: 35%
@@ -769,6 +802,18 @@
 
     +media(1700px)
       bottom: 70px
+
+    +media(2000px)
+      bottom: 90px
+
+    +media(2300px)
+      bottom: 120px
+
+    +media(3000px)
+      bottom: 140px
+
+    +media(3500px)
+      bottom: 250px
 
   +e('control')
     width: 16px
@@ -955,8 +1000,17 @@
         &::after
           background-color: #ffffff
 
-      +media(1700px)
-        margin-bottom: 70px
+    +media(1700px)
+      margin-bottom: 70px
+
+    +media(1920px)
+      margin-bottom: 110px
+
+    +media(2000px)
+      margin-bottom: 130px
+
+    +media(3500px)
+      margin-bottom: 300px
 
   +e('arrows')
     +media(1024px)

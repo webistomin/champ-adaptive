@@ -11,7 +11,7 @@
     padding: 12.5px 15.5px 20px
     position: absolute
     width: 100%
-    z-index: 2
+    z-index: 1
     //margin: 0 -2px
     box-sizing: border-box
     content: ""
@@ -29,11 +29,21 @@
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1440' height='130' viewBox='0 0 1440 130'%3E%3Cdefs%3E%3Cpath id='flyta' d='M1440 0H0v130z'/%3E%3C/defs%3E%3Cg%3E%3Cg%3E%3Cuse fill='%23161615' xlink:href='%23flyta'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
 
     +media(1024px)
-      padding-top: 22px
+      height: 108px
+      padding: 0
+      padding-left: 23px
+      padding-top: 18px
+
+    +media(1300px)
+      height: 100px
 
     +media(1700px)
-      padding-top: 40px
-      height: 200px
+      //padding-top: 40px
+      height: 120px
+
+    +media(1920px)
+      padding-top: 24px
+      height: 145px
 
     //+media(768px)
     //  padding-top: 20px
@@ -57,3 +67,11 @@
     +media(1024px)
       img
         width: 190px
+
+    +media(1700px)
+      img
+        width: 250px
+
+    +media(1920px)
+      img
+        width: 300px
