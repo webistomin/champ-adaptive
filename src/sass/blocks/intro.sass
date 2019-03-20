@@ -82,7 +82,7 @@
       height: 700px
 
     +media(1024px)
-      height: 810px
+      height: 830px
 
     +media(1700px)
       height: 900px
@@ -410,7 +410,7 @@
           background-image: url("../img/strawberry-slide/strawberry-3.png")
           top: 16%
           left: 37%
-          z-index: 1
+          z-index: 2
 
           +media(540px)
             left: 50%
@@ -493,7 +493,7 @@
             background-image: url("../img/nut-slide/desktop/nut-2.png")
 
           +media(1024px)
-            top: 26%
+            top: 16%
             left: 38%
 
         +m('third')
@@ -556,7 +556,7 @@
         +m('seventh')
           top: 42%
           left: 82%
-          z-index: 0
+          z-index: -1
           width: 24px
           height: 26px
           background-image: url("../img/nut-slide/nut-5.png")
@@ -566,6 +566,7 @@
             height: 59px
             left: 90%
             top: 35%
+            z-index: 0
             background-image: url("../img/nut-slide/desktop/nut-5.png")
 
     +m('sixth')
@@ -592,12 +593,13 @@
           height: 102px
           left: 72%
           top: 8%
-          z-index: 0
+          z-index: -1
           background-image: url("../img/vanilla-slide/vanilla-3.png")
 
           +media(768px)
             width: 206px
             height: 214px
+            z-index: 0
             background-image: url("../img/vanilla-slide/desktop/vanilla-3.png")
 
           +media(1024px)
@@ -609,12 +611,13 @@
           height: 144px
           left: 52%
           top: 24%
-          z-index: 1
+          z-index: -1
           background-image: url("../img/vanilla-slide/Group 64@2x.png")
 
           +media(768px)
             width: 230px
             height: 346px
+            z-index: 1
             background-image: url("../img/vanilla-slide/desktop/Group 64@2x.png")
 
           +media(1024px)
@@ -706,7 +709,7 @@
 
     +media(768px)
       margin-bottom: -50px
-      top: 0
+      top: -20px
 
     +m('absolute')
       position: absolute
@@ -715,7 +718,7 @@
       z-index: -1
 
       +media(768px)
-        left: 20%
+        left: 27%
 
       +media(1024px)
         left: 30%
@@ -728,8 +731,24 @@
       +media(768px)
         width: 35%
         max-width: 250px
+        top: auto
       +media(1024px)
         max-width: 350px
+
+    +m('pack')
+      +media(1024px)
+        max-width: 340px
+        top: 20px
+
+        +ie()
+          top: 60px
+
+      +media(1920px)
+        max-width: 315px
+        top: 0
+
+      +media(2500px)
+        max-width: none
 
   +e('decor')
     position: absolute
@@ -737,6 +756,7 @@
     background-repeat: no-repeat
     background-position: center
     transform-style: preserve-3d
+    //transform-style: flat
     backface-visibility: hidden
 
   +e('title')
@@ -796,6 +816,7 @@
     position: absolute
     bottom: 15px
     width: 100%
+    transform: none
 
     +media(1024px)
       bottom: 50px

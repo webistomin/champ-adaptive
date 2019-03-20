@@ -1,6 +1,7 @@
 .page-header
   flex-shrink: 0
   overflow: hidden
+  //-webkit-transform: translate3d(0,0,0)
 
   +e('inner')
     //background-image: url("../img/header.svg")
@@ -10,9 +11,9 @@
     background-size: cover
     padding: 12.5px 15.5px 20px
     position: absolute
-    width: 100%
+    width: 102%
     z-index: 1
-    //margin: 0 -2px
+    margin: 0 -2px
     box-sizing: border-box
     content: ""
     //margin: 0 -1%
@@ -29,21 +30,24 @@
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1440' height='130' viewBox='0 0 1440 130'%3E%3Cdefs%3E%3Cpath id='flyta' d='M1440 0H0v130z'/%3E%3C/defs%3E%3Cg%3E%3Cg%3E%3Cuse fill='%23161615' xlink:href='%23flyta'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
 
     +media(1024px)
-      height: 108px
+      height: 140px
       padding: 0
       padding-left: 23px
       padding-top: 18px
 
     +media(1300px)
-      height: 100px
+      padding-top: 45px
+      height: 140px
 
     +media(1700px)
       //padding-top: 40px
-      height: 120px
+      height: 160px
 
     +media(1920px)
-      padding-top: 24px
-      height: 145px
+      height: 180px
+
+    +media(2300px)
+      height: 200px
 
     //+media(768px)
     //  padding-top: 20px
